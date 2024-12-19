@@ -25,6 +25,6 @@ This is a website designed to exhibit their services. Their primary focus is the
 - Navigate to the project folder
 - Open the "index.html" in your browser.
 
-- ##Design Choices
+- ## Design Choices
 - The navigation bar was built using CSS, the concept was to have a somewhat minimalist design, so as to not distract the user but to keep their focus.
 - According to Mental Health America, blue "blue is used in therapeutic settings for meditation and relaxation because it helps you unwind, find peace, and become more comfortable" This would have suited the overall aesthetic of a Safety and Training site as the face of danger, the best way to overcome an uncomfortable situation is to approach it calmly. Various shades and hues of blue were used throughout the site. For fonts Playfair Display and Source Sans were used. They create a nice contrast, one is a bit on the older fancier side and the other looks a bit casual, but most importantly their readability played a huge role in their selection.
