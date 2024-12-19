@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/favicon-01.png" type="image/png">
+    <script src="https://kit.fontawesome.com/2b8c24c040.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <title>sign up</title>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <label for="nav-toggle" class="nav-button">
+            <i class="fa-solid fa-bars"></i>        
+        </label>
+        
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+
+            <li>
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-spacer">Home</span>
+                </a>
+            </li>
+            
+            
+            <li>
+                <a href="courses-list.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+            
+            
+            <li>
+                <a href="resources.html">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    Resources
+                </a>
+            </li>
+            
+            <li>
+                <a href="contact.html">
+                    <i class="fa-solid fa-address-book"></i>
+                    Contact
+                </a>
+            </li>
+            
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+            </li>
+          
+        </ul>
+        </div>
+    </div>
+
+    <section class="page-header page-header__sign-up">
+        <h1 class="page-header__title">Sign Up</h1>
+    </section>
+
+    <div class="sign-up">
+        <h2>Complete the form below to sign up</h2>
+        <form action="/submit-form" method="post" class="sign-up__form">
+          <label for="name" class="sign-up__label">Full Name</label>
+          <input type="text" id="name" name="name" class="sign-up__input" required>
+      
+          <label for="email" class="sign-up__label">Email Address</label>
+          <input type="email" id="email" name="email" class="sign-up__input" required>
+      
+          <label for="phone" class="sign-up__label">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="sign-up__input" required>
+      
+          <label for="course" class="sign-up__label">Select a Course</label>
+          <select id="course" name="course" class="sign-up__select" required>
+            <option value=""> -Choose a Course-</option>
+            <option value="Workplace Safety Basics "> Workplace Safety Basics </option>
+            <option value="Occupational Health and Safety (OHS) Compliance">  Occupational Health and Safety (OHS) Compliance  </option>
+            <option value="Ergonomics and Workplace Wellness">  Ergonomics and Workplace Wellness  </option>
+            <option value="Leadership in Safety">  Leadership in Safety  </option>
+            <option value="Equipment and Machinery Safety">  Equipment and Machinery Safety  </option>
+            <option value="Driver Safety Training">  Equipment and Machinery Safety  </option>
+            <option value="CPR and First Aid Certification ">  CPR and First Aid Certification  </option>
+          </select>
+      
+          <button class="button button__sign-up" type="submit">Sign Up</button>
+
+        </form>
+    </div>
+      
+    
+</body>
+</html>

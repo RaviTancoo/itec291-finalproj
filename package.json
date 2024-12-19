@@ -1,0 +1,19 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass": "sass --watch sass/main.scss:css/style.css",
+  "serve": "live-server --port=8080",
+  "dev": "concurrently \"npm run compile:sass\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.82.0"
+  }
+}

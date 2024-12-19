@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    background-color: var.$gunmetal;
+    height: 25vh;
+    color:var.$af-white;
+    font-family: "Source Sans 3", serif;
+
+    &__contatct,
+    &__logo,
+    &__copyright {
+        align-self: center;
+    }
+
+    &__contatct {
+        text-align: left; 
+        font-size: 0.8rem;
+    
+        @include mixins.respond("phone") {  
+            display: none;
+        }
+        @include mixins.respond("tab-port") {  
+            display: none;
+        }
+    }
+    
+    &__logo {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-transform: lowercase;
+        letter-spacing: 0.1rem;
+        @include mixins.respond("phone") {  
+            transform: translateX(12rem);
+        }
+    
+        @include mixins.respond("tab-port") {  
+            transform: translateX(18rem);
+        }
+    }
+    
+    &__copyright {
+        font-size: 0.8rem;
+        text-align: right;
+    
+        @include mixins.respond("phone") {  
+            display: none;
+        }
+    
+        @include mixins.respond("tab-port") {  
+            display: none;
+        }
+    }
+    
+}

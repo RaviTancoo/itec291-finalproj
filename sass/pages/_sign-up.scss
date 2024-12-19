@@ -1,0 +1,43 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as var;
+
+.sign-up {
+    font-family: "Source Sans 3", serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    opacity: 0.9;
+    margin: auto;
+    transform: translateY(2rem);
+    padding-bottom: 3rem;
+}
+.sign-up h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.sign-up__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1.5rem;
+}
+  
+  .sign-up__label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin: auto;
+
+  }
+  
+  .sign-up__input,
+  .sign-up__select {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+  

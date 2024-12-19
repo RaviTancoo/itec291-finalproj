@@ -1,0 +1,48 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as var;
+
+.resources{
+    display: grid; 
+    text-align: center;  
+    background-color: var.$af-white;
+    color: var.$gunmetal3;
+
+    &__heading{
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        padding: 2rem; 
+    
+    }
+    
+    &__content{
+        font-family: "Source Sans 3", serif;
+        padding: 0 3rem 2rem;
+
+        @include mixins.respond("phone") {
+            padding: 0 4rem 2rem;
+        }
+    }
+
+    &__faq{
+        font-family: "Source Sans 3", serif;
+
+        &-question{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            @include mixins.respond("tab-port") {
+                padding: 1rem;
+            }
+        }
+        &-answer{
+            font-size: 1rem;
+            padding: 0rem 4rem 2rem;
+            @include mixins.respond("phone") {
+                padding: 1rem 4rem 2rem;
+            }
+
+            @include mixins.respond("tab-port") {
+                padding: 1rem 5rem 2rem;
+            }
+        }
+    }
+}

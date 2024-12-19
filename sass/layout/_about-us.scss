@@ -1,0 +1,57 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as var;
+
+
+.about-us{
+    background-color: var.$af-white;
+
+    &--header{
+        font-family: "Playfair Display", serif;
+        text-transform: lowercase;
+        text-align: center;
+        color: var.$gunmetal3;
+        font-size: 3rem;
+        padding-top: 1rem;
+        display: grid;
+    
+        transform: translateY(1rem);
+
+        @include mixins.respond("phone") {
+            font-size: 2.5rem;
+        }
+    
+        @include mixins.respond("tab-port") {
+            font-size: 3rem;
+        }
+        @include mixins.respond("tab-land") {
+            font-size: 3.5rem;
+        }
+        @include mixins.respond("big-desktop") {
+            font-size: 4rem;
+        }
+    }
+
+    &--p{
+        text-align: center;
+        font-family: "Source Sans 3", serif;
+        font-size: 1rem;
+        padding: 4rem;
+    
+        transform: translateY(1rem);
+
+        @include mixins.respond("tab-port") {
+            font-size: 1.25rem;
+            padding: 5rem;
+        }
+
+        @include mixins.respond("big-desktop") {
+            font-size: 1.5rem;
+            padding: 5rem;
+        }
+    }
+    &--p1{
+        margin-bottom: 2rem;
+    }
+}
+
+

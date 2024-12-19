@@ -1,0 +1,60 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as var;
+
+.login{
+    &__form{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 40%;
+        background-color: var.$payne-grey;
+        height: 36rem;
+        border-radius: 25px;
+        opacity: 0.9;
+        margin: auto;
+    
+        @include mixins.respond("phone") {
+            width: 80%;
+        }
+    
+        @include mixins.respond("tab-port") {
+            width: 85%;
+        }
+    
+        @include mixins.respond("tab-land") {
+            width: 75%;
+        }
+    }
+    &__title{
+        font-family: "Source Sans 3", serif;
+        font-size: 7.5rem;
+        color: var.$white;
+    }
+    
+    &__field{
+        display: grid;
+        margin: auto;
+        grid-template-rows: auto auto;
+        padding: 1rem;
+        width: 50%;
+        transform: translateY(-2rem);
+    }
+    
+    &__label{
+        font-family: "Source Sans 3", serif;
+        font-weight: 600;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        color: var.$white;
+    }
+    
+    &__input{
+        padding: 1rem;
+        margin: auto;
+        height: 2rem;
+        width: 100%;
+    }
+
+}
+
+
+

@@ -1,0 +1,125 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as var;
+
+
+.button{
+    margin: auto;
+    width: 35%;
+    height: 3rem;
+    border: none;
+    border-radius: 25px;
+
+    font-family: "Source Sans 3", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &__cta{
+        background-color:var.$alice-blue;
+        text-decoration: none;
+        color: var.$gunmetal;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-top: 0.4rem;
+        width: 25%;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-0.5rem);  
+            transition: transform 0.3s ease; 
+        }
+    
+        @include mixins.respond("tab-port") {
+            transform: translateY(0rem);
+            width: 25%;
+        }
+    }
+
+    &__enroll{
+        background-color: var.$airforce-blue;
+        color: var.$white;
+        width: 15%;
+        transform: translateY(1rem);
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(0.5rem);  
+            transition: transform 0.3s ease; 
+        }
+
+        @include mixins.respond("phone") {
+            width: 25%;
+        }
+        @include mixins.respond("tab-port") {
+            width: 30%;
+        }
+    }
+
+    &__login{
+        background-color:var.$gunmetal;
+        color: var.$white;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+    
+        transform: translateY(-1rem);
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.1;
+            transition: transform 0.3s ease; 
+        }
+    
+        @include mixins.respond("phone") {
+            transform: translateY(-1rem);
+            width: 35%;
+        }
+        @include mixins.respond("tab-port") {
+            transform: translateY(-1rem);
+            width: 25%;
+        }
+    }
+
+    &__submit{
+        background-color: var.$gunmetal2;
+        color: var.$white;
+        width: 35%;
+    
+    
+        transform: translateY(-1rem);
+        
+        &:hover {
+            cursor: pointer;
+            scale: 1.1;
+            transition: transform 0.3s ease; 
+        }
+    
+        @include mixins.respond("phone") {
+            transform: translateY(0rem);
+            width: 35%;
+        }
+        @include mixins.respond("tab-port") {
+            transform: translateY(0rem);
+            width: 25%;
+        }
+    }
+
+    &__sign-up{
+        width: 25%;
+        background-color:var.$gunmetal;
+        color: var.$af-white;
+        transform: translateY(1rem);
+
+        &:hover{
+            background-color: var.$gunmetal3;
+        }
+    }
+
+}
+
+
+
+
+
+
+
